@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-2">
+    <TextView android:textSize="38sp" android:textColor="#ce8f07" android:id="@id/bankLabel" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="20dp" android:text="@string/welcome_label" android:height="60dp" android:layout_centerHorizontal="true" />
+    <EditText android:textSize="23sp" android:textColor="#ce8f07" android:gravity="11" android:id="@id/loginCell" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="60dp" android:hint="@string/cell_number_hint" android:width="280dp" android:layout_below="@id/bankLabel" android:layout_centerHorizontal="true" android:inputType="3" />
+    <EditText android:textSize="23sp" android:textColor="#ce8f07" android:gravity="11" android:id="@id/loginPass" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="60dp" android:hint="@string/password_hint" android:width="280dp" android:layout_below="@id/loginCell" android:layout_centerHorizontal="true" android:inputType="81" />
+    <Button android:id="@id/loginBtn" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="60dp" android:text="@string/login_text" android:layout_below="@id/loginPass" />
+    <Button android:id="@id/loginRegisterBtn" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="60dp" android:text="@string/register_text" android:layout_below="@id/loginBtn" />
+</RelativeLayout>

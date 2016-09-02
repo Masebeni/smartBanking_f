@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="-1" android:layout_height="-1">
+    <TextView android:textSize="38sp" android:textColor="#ce8f07" android:id="@id/bankLabel" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="20dp" android:text="@string/welcome_label" android:height="60dp" android:layout_centerHorizontal="true" />
+    <EditText android:id="@id/transactionCellNumber" android:layout_width="-1" android:layout_height="-2" android:hint="@string/cell_number_hint" android:layout_below="@id/bankLabel" android:inputType="2" />
+    <EditText android:id="@id/transactionAccountNumber" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="30dp" android:hint="@string/account_number_hint" android:layout_below="@id/transactionCellNumber" android:inputType="2" />
+    <EditText android:id="@id/transactionAmount" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="30dp" android:hint="@string/transaction_amount_hint" android:layout_below="@id/transactionAccountNumber" android:inputType="2002" />
+    <RadioGroup android:id="@id/transTypeRadioGroup" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="50dp" android:layout_below="@id/transactionAmount">
+        <RadioButton android:id="@id/depositTransaction" android:layout_width="-2" android:layout_height="-2" android:text="@string/deposit_transaction" />
+        <RadioButton android:id="@id/withdrawalTransaction" android:layout_width="-2" android:layout_height="-2" android:text="@string/withdrawal_transaction" />
+    </RadioGroup>
+    <Button android:id="@id/processTransaction" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="70dp" android:text="@string/process_transaction_btn" android:layout_below="@id/transTypeRadioGroup" />
+</RelativeLayout>
